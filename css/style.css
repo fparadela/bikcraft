@@ -4,13 +4,24 @@ body {
 }
 
 ul {
-  margin: 0px;
   padding: 0;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+ul,
+p {
+  margin: 0px;
 }
 
 .header-bg {
@@ -37,7 +48,7 @@ a {
 }
 
 .header-menu a {
-  color: #fff;
+  color: #ffffff;
   display: inline-block;
   padding: 16px 0px;
   font-size: 1.125rem;
@@ -48,7 +59,7 @@ a {
   content: "";
   display: block;
   height: 2px;
-  width: 0%;
+  width: 0px;
   background: #ffffff;
   margin-top: 4px;
   transition: 0.3s;
@@ -92,4 +103,69 @@ a {
 
 .header-menu a:after {
   display: none;
+}
+
+.intro-bg {
+  background: #000000;
+  color: #ffffff;
+  box-shadow: inset 0 -120px #ffffff;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-content {
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+.intro img {
+  height: 100%;
+  object-fit: cover;
+  /* max-width: 640px;
+  height: 800px; */
+  border-radius: 4px;
+}
+
+.intro h1 {
+  margin-bottom: 32px;
+  font-size: 64px;
+  line-height: 1.125;
+}
+
+.intro h1 span {
+  color: #ffbb00;
+}
+
+.intro p {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #b2b2b2;
+}
+
+.intro a {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbb00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #332200;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: bold;
+}
+
+.intro a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
 }
