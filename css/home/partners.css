@@ -41,6 +41,11 @@
     padding-bottom: 60px;
   }
 
+  .partners li {
+    display: flex;
+    padding: 20px;
+  }
+
   .partners h2 {
     margin-bottom: 20px;
   }
