@@ -60,6 +60,8 @@
 
 .insurance-item a {
   grid-column: 1/-1;
+  display: block;
+  margin-left: -21px;
 }
 
 @media (max-width: 800px) {
